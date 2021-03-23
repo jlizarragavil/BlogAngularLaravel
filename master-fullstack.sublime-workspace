@@ -1,0 +1,1117 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getUser\tmethod"
+			],
+			[
+				"pro",
+				"profile.component\tscript"
+			],
+			[
+				"_",
+				"_userService"
+			],
+			[
+				"se",
+				"services\tdirectory"
+			],
+			[
+				"po",
+				"post-edit\tdirectory"
+			],
+			[
+				"con",
+				"console\tvar"
+			],
+			[
+				"post",
+				"_postService\tproperty"
+			],
+			[
+				"Http",
+				"HttpHeaders\talias"
+			],
+			[
+				"Post",
+				"PostService\talias"
+			],
+			[
+				"fro",
+				"form-control"
+			],
+			[
+				"categ",
+				"category_id"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"c",
+				"category.service\tscript"
+			],
+			[
+				"_rou",
+				"_router\tproperty"
+			],
+			[
+				"Cate",
+				"CategoryService\talias"
+			],
+			[
+				"borde",
+				"border-radius\tproperty"
+			],
+			[
+				"margin-",
+				"margin-bottom\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"Froala",
+				"FroalaViewModule\talias"
+			],
+			[
+				"l",
+				"loadUser\tmethod"
+			],
+			[
+				"log",
+				"logout\tmethod"
+			],
+			[
+				"re",
+				"removeItem\tmethod"
+			],
+			[
+				"loca",
+				"localStorage\tvar"
+			],
+			[
+				"Htt",
+				"HttpHeaders\talias"
+			],
+			[
+				"Ob",
+				"Observable\talias"
+			],
+			[
+				"User",
+				"UserService\talias"
+			],
+			[
+				"ng",
+				"ngModel"
+			],
+			[
+				"for",
+				"forms\tdirectory"
+			],
+			[
+				"Log",
+				"LoginComponent\talias"
+			],
+			[
+				"lo",
+				"LoginComponent\talias"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "blog-angular/src/app/components/user-edit/user-edit.component.html",
+			"settings":
+			{
+				"buffer_size": 2140,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/profile/profile.component.html",
+			"settings":
+			{
+				"buffer_size": 2372,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/category-detail/category-detail.component.html",
+			"settings":
+			{
+				"buffer_size": 2281,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/profile/profile.component.ts",
+			"settings":
+			{
+				"buffer_size": 2084,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/user-edit/user-edit.component.ts",
+			"settings":
+			{
+				"buffer_size": 3396,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/app.module.ts",
+			"settings":
+			{
+				"buffer_size": 2024,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": " import { ModuleWithProviders } from '@angular/core';\nimport { Routes, RouterModule } from '@angular/router';\n\nimport { LoginComponent } from './components/login/login.component';\nimport { RegisterComponent } from './components/register/register.component';\nimport { ErrorComponent } from './components/error/error.component';\nimport { HomeComponent } from './components/home/home.component';\nimport { UserEditComponent } from  './components/user-edit/user-edit.component';\nimport { CategoryNewComponent } from './components/category-new/category-new.component';\nimport { PostNewComponent } from './components/post-new/post-new.component';\nimport { PostDetailComponent } from './components/post-detail/post-detail.component';\nimport { PostEditComponent } from './components/post-edit/post-edit.component';\nimport { CategoryDetailComponent } from './components/category-detail/category-detail.component';\nimport { IdentityWard } from './services/identity.ward';\nimport { ProfileComponent } from './components/profile/profile.component';\n\nconst appRoutes: Routes = [\n\t{path: '', component: HomeComponent},\n\t{path: 'inicio', component: HomeComponent},\n\t{path: 'login', component: LoginComponent},\n\t{path: 'logout/:sure', component: LoginComponent},\n\t{path: 'registro', component: RegisterComponent},\n\t{path: 'ajustes', component: UserEditComponent, canActivate: [IdentityWard]},\n\t{path: 'crear-categoria', component: CategoryNewComponent, canActivate: [IdentityWard]},\n\t{path: 'crear-entrada', component: PostNewComponent, canActivate: [IdentityWard]},\n\t{path: 'entrada/:id', component: PostDetailComponent},\n\t{path: 'editar-entrada/:id', component: PostEditComponent, canActivate: [IdentityWard]},\n\t{path: 'categoria/:id', component: CategoryDetailComponent},\n\t{path: 'perfil/:id', component: ProfileComponent},\n\t{path: '**', component: ErrorComponent}\n\t\n];\n\nexport const appRoutingProviders: any[] = [];\nexport const routing: ModuleWithProviders<any> = RouterModule.forRoot(appRoutes);",
+			"file": "blog-angular/src/app/app.routing.ts",
+			"file_size": 2017,
+			"file_write_time": 132464679929466149,
+			"settings":
+			{
+				"buffer_size": 1984,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/services/user.service.ts",
+			"settings":
+			{
+				"buffer_size": 2300,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/home/home.component.ts",
+			"settings":
+			{
+				"buffer_size": 1314,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/home/home.component.html",
+			"settings":
+			{
+				"buffer_size": 2067,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/home/home.component.css",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog-angular/angular.json",
+			"settings":
+			{
+				"buffer_size": 4140,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/app.component.html",
+			"settings":
+			{
+				"buffer_size": 2672,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/post-new/post-new.component.ts",
+			"settings":
+			{
+				"buffer_size": 3056,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/post-new/post-new.component.html",
+			"settings":
+			{
+				"buffer_size": 1716,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/post-edit/post-edit.component.html",
+			"settings":
+			{
+				"buffer_size": 24,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/error/error.component.ts",
+			"settings":
+			{
+				"buffer_size": 347,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/post-edit/post-edit.component.spec.ts",
+			"settings":
+			{
+				"buffer_size": 641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog-angular/src/app/components/error/error.component.spec.ts",
+			"settings":
+			{
+				"buffer_size": 619,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pci",
+				"Preferences: Settings – Syntax Specific"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/wamp64/www/master-fullstack",
+		"/E/wamp64/www/master-fullstack/blog-angular",
+		"/E/wamp64/www/master-fullstack/blog-angular/src",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/category-detail",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/home",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-edit",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-new",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/profile",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/user-edit",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/models",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/services"
+	],
+	"file_history":
+	[
+		"/E/wamp64/www/master-fullstack/blog-angular/src/styles.css",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-list/post-list.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-new/post-new.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/profile/profile.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/app.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/app.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-list/post-list.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/home/home.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/category-detail/category-detail.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/profile/profile.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/services/user.service.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-detail/post-detail.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/home/home.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-detail/post-detail.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-edit/post-edit.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/app.routing.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/services/category.service.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/user-edit/user-edit.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/services/identity.ward.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/app.module.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/category-detail/category-detail.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/services/post.services.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-new/post-new.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/post-edit/post-edit.component.html",
+		"/C/Users/Usuario/AppData/Roaming/Sublime Text 3/Packages/TypeScript/tsserver/lib.dom.d.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/login/login.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/register/register.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/models/post.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/category-new/category-new.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/user-edit/user-edit.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/login/login.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/category-new/category-new.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/models/category.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/models/user.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/services/global.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/login/login.component.spec.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/package.json",
+		"/E/wamp64/www/master-fullstack/blog-angular/angular.json",
+		"/E/wamp64/www/master-fullstack/blog-angular/node_modules/angular-froala-wysiwyg/editor/editor.module.d.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/register/register.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/app.component.spec.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/error/error.component.ts",
+		"/E/wamp64/www/master-fullstack/blog-angular/src/app/components/error/error.component.html",
+		"/E/wamp64/www/master-fullstack/blog-angular/node_modules/bootstrap/dist/js/bootstrap.min.js"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			");\n",
+			"setitem",
+			"localStorage",
+			"response"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "blog-angular/src/app/components/user-edit/user-edit.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1644,
+								1644
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 227.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "blog-angular/src/app/components/profile/profile.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2372,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								558,
+								558
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog-angular/src/app/components/category-detail/category-detail.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2281,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								404,
+								404
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "blog-angular/src/app/components/profile/profile.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2084,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1000,
+								1000
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "blog-angular/src/app/components/user-edit/user-edit.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3003,
+								3003
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1035.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "blog-angular/src/app/app.module.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2024,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1881,
+								1881
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "blog-angular/src/app/app.routing.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1984,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "blog-angular/src/app/services/user.service.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2300,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "blog-angular/src/app/components/home/home.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1314,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "blog-angular/src/app/components/home/home.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2067,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								223,
+								223
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "blog-angular/src/app/components/home/home.component.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "blog-angular/angular.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4140,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1013,
+								880
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 45.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "blog-angular/src/app/app.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "blog-angular/src/app/components/post-new/post-new.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3056,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1125.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "blog-angular/src/app/components/post-new/post-new.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "blog-angular/src/app/components/post-edit/post-edit.component.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "blog-angular/src/app/components/error/error.component.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 347,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "blog-angular/src/app/components/post-edit/post-edit.component.spec.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"typescript_plugin_format_options":
+							{
+								"convertTabsToSpaces": false,
+								"indentSize": 4,
+								"tabSize": 4
+							},
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "blog-angular/src/app/components/error/error.component.spec.ts",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 619,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/TypeScript/TypeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"use_tab_stops": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 42.6666666667
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "master-fullstack.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 308.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
